@@ -58,6 +58,10 @@ img {
   margin: 0 2px;
 }
 
+.rating-text {
+  color: hsl(300, 43%, 22%);
+}
+
 /* Testimonial Styles */
 
 .testimonial {
@@ -107,4 +111,108 @@ img {
 
 .attribution {
   margin: 1em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ 
+    DESKTOP STYLES 
+~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 1440px) {
+
+  /* HTML Styles */
+
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg) top left no-repeat,
+                url(../images/bg-pattern-bottom-desktop.svg) bottom center no-repeat;
+                text-align: left;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+
+  /* Grid Styles */
+
+  .social-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .testimonials {
+    grid-column: 1 / -1;
+  }
+
+  /* Flexbox Styles */
+
+  .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .rating-one {
+    align-self: start;
+  }
+
+  .rating-two {
+    align-self: center;
+  }
+
+  .rating-three {
+    align-self: end;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 0px;
+    gap: 2em;
+    height: 290px;
+  }
+
+  .testimonial-one {
+    align-self: start;
+  }
+
+  .testimonial-two {
+    align-self: center;
+  }
+
+  .testimonial-three {
+    align-self: end;
+  }
+
+  /* Rating Styles */
+
+  .ratings {
+    padding: 0 3em;
+  }
+
+  .rating {
+    padding: 0.5em;
+  }
+
+  .star-rating {
+    margin: 0 2em;
+  }
+
+  .rating-text {
+    margin-right: 3em;
+  }
+
+  /* Testimonial Styles */
+
+  .testimonial {
+    margin: 0;
+  }
+
+  /* Misc Styles */
+
+  .social-section {
+    margin: 8em auto;
+    width: 80%;
+  }
 }
