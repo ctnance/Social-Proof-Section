@@ -11,11 +11,20 @@ html {
 }
 
 body {
-    font-size: 15px;
+  background: url(../images/bg-pattern-top-mobile.svg) top left no-repeat,
+              url(../images/bg-pattern-bottom-mobile.svg) bottom center no-repeat;
+  font-family: "Spartan";
+  font-size: 15px;
+  text-align: center;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  margin: 0 1em;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* Flexbox Styles */
@@ -23,4 +32,79 @@ img {
 .ratings {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+    margin: 1em 0 4em;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rating Styles */
+
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 1em;
+  padding: 1em 0 0;
+  font-weight: 700;
+}
+
+.star-rating {
+  padding-top: 2.25px;
+}
+
+.star-img {
+  margin: 0 2px;
+}
+
+/* Testimonial Styles */
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 1em;
+  color: #FFF;
+  text-align: left;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+
+.customer-info {
+  padding-bottom: 1em;
+  overflow: hidden;
+}
+
+.customer-info p {
+  margin: 4.66px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+  margin-right: 2em;
+  float: left;
+}
+
+.customer-name {
+  font-weight: 700;
+}
+
+.verified-buyer-status {
+  color: hsl(333, 80%, 67%);
+}
+
+/* Misc Styles */
+
+.social-section {
+  margin: 4em 1em;
+}
+
+.social-description {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+
+.attribution {
+  margin: 1em;
 }
