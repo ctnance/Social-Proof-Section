@@ -13,7 +13,7 @@ html {
 body {
   background: url(../images/bg-pattern-top-mobile.svg) top left no-repeat,
               url(../images/bg-pattern-bottom-mobile.svg) bottom center no-repeat;
-  font-family: "Spartan";
+  font-family: "Spartan", sans-serif;
   font-size: 15px;
   text-align: center;
 }
@@ -32,7 +32,6 @@ img {
 .ratings {
     display: flex;
     flex-direction: column;
-    gap: 1em;
     margin: 1em 0 4em;
 }
 
@@ -47,6 +46,7 @@ img {
   background-color: hsl(300, 24%, 96%);
   border-radius: 1em;
   padding: 1em 0 0;
+  margin-bottom: 1em;
   font-weight: 700;
 }
 
@@ -54,11 +54,11 @@ img {
   padding-top: 2.25px;
 }
 
-.star-img {
+.star-rating img {
   margin: 0 2px;
 }
 
-.rating-text {
+.rating p {
   color: hsl(300, 43%, 22%);
 }
 
@@ -199,7 +199,7 @@ img {
     margin: 0 2em;
   }
 
-  .rating-text {
+  .rating p {
     margin-right: 3em;
   }
 
