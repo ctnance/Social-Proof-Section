@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* HTML Styles */
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Flexbox Styles */
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+}
